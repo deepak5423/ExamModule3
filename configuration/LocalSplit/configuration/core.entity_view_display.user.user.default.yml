@@ -1,0 +1,98 @@
+uuid: 1e074219-f2d7-41b7-99ce-89643eb0fec2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_name
+    - field.field.user.user.field_roles
+    - field.field.user.user.field_twitter
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - link
+    - options
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_facebook:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 15
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_linkedin:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 15
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_roles:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_twitter:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 15
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  member_for: true

@@ -1,0 +1,25 @@
+uuid: 16f7c22c-5fc4-4f57-bd62-9b31b30ad966
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.for-every
+  module:
+    - system
+  theme:
+    - bootstrap5
+id: foreveryone
+theme: bootstrap5
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:for-every'
+settings:
+  id: 'system_menu_block:for-every'
+  label: 'for everyone'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

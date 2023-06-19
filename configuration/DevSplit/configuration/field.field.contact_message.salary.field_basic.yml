@@ -1,0 +1,23 @@
+uuid: 56853cc6-100c-44b8-8042-5ab43ef37c3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.salary
+    - field.storage.contact_message.field_basic
+id: contact_message.salary.field_basic
+field_name: field_basic
+entity_type: contact_message
+bundle: salary
+label: Basic
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

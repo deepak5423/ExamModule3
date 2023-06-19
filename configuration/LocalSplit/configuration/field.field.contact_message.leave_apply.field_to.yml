@@ -1,0 +1,24 @@
+uuid: 2934e013-7672-416c-8066-caa1b98ce998
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.leave_apply
+    - field.storage.contact_message.field_to
+  module:
+    - datetime
+id: contact_message.leave_apply.field_to
+field_name: field_to
+entity_type: contact_message
+bundle: leave_apply
+label: To
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

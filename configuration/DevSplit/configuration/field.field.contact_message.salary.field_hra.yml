@@ -1,0 +1,23 @@
+uuid: fbc36b20-3b7b-495b-ae83-37a9b55267ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.salary
+    - field.storage.contact_message.field_hra
+id: contact_message.salary.field_hra
+field_name: field_hra
+entity_type: contact_message
+bundle: salary
+label: HRA
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

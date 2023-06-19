@@ -1,0 +1,24 @@
+uuid: 6ce0f558-6e3b-4f6c-b769-f0344096cd30
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.salary
+  module:
+    - contact
+    - field_ui
+    - file
+    - node
+    - views_ui
+id: employee
+label: Employee
+weight: 6
+is_admin: null
+permissions:
+  - 'access files overview'
+  - 'access user contact forms'
+  - 'administer contact forms'
+  - 'administer contact_message display'
+  - 'administer contact_message fields'
+  - 'administer views'
+  - 'view salary revisions'

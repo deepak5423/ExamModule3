@@ -1,0 +1,62 @@
+uuid: 1de16c4d-98fb-4e20-8fe5-86dc72d4550f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.salary.field_basic
+    - field.field.node.salary.field_hra
+    - field.field.node.salary.field_special_allowances
+    - field.field.node.salary.field_user_name
+    - node.type.salary
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.salary.default
+targetEntityType: node
+bundle: salary
+mode: default
+content:
+  field_basic:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_hra:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_special_allowances:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_user_name:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true

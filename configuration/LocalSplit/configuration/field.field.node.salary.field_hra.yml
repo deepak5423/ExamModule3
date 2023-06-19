@@ -1,0 +1,23 @@
+uuid: 545e47c6-a656-4708-85dd-4ae546c63d56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hra
+    - node.type.salary
+id: node.salary.field_hra
+field_name: field_hra
+entity_type: node
+bundle: salary
+label: HRA
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

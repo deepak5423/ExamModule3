@@ -1,0 +1,12 @@
+uuid: 35be9066-a760-484f-8516-500c53127819
+langcode: en
+status: true
+dependencies: {  }
+id: leave_apply
+label: 'Leave apply'
+recipients:
+  - hr@innoraft.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

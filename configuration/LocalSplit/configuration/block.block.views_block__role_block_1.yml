@@ -1,0 +1,37 @@
+uuid: 1eefcc19-8dc3-40db-bd50-e0e198519966
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.role
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - bootstrap5
+id: views_block__role_block_1
+theme: bootstrap5
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:role-block_1'
+settings:
+  id: 'views_block:role-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /edit-page
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      hr: hr
