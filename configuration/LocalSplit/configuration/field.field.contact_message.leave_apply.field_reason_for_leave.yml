@@ -1,0 +1,19 @@
+uuid: 3a5f0a0c-7579-4f73-b5e0-f637f6d218a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.leave_apply
+    - field.storage.contact_message.field_reason_for_leave
+id: contact_message.leave_apply.field_reason_for_leave
+field_name: field_reason_for_leave
+entity_type: contact_message
+bundle: leave_apply
+label: 'Reason for leave'
+description: 'reason for leave'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

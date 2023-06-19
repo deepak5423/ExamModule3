@@ -1,0 +1,23 @@
+uuid: 33e4bb07-3e22-47db-8c00-a4ec9ca8e425
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_basic
+    - node.type.salary
+id: node.salary.field_basic
+field_name: field_basic
+entity_type: node
+bundle: salary
+label: Basic
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

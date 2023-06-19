@@ -1,0 +1,33 @@
+uuid: 9b9a0520-594e-4894-b2a4-5ed3dec4dbfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.salary
+  module:
+    - contact
+    - field_ui
+    - file
+    - node
+    - views_ui
+id: hr
+label: HR
+weight: 5
+is_admin: null
+permissions:
+  - 'access files overview'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'administer contact forms'
+  - 'administer contact_message display'
+  - 'administer contact_message fields'
+  - 'administer users'
+  - 'administer views'
+  - 'create salary content'
+  - 'delete any salary content'
+  - 'delete own salary content'
+  - 'delete salary revisions'
+  - 'edit any salary content'
+  - 'edit own salary content'
+  - 'revert salary revisions'
+  - 'view salary revisions'

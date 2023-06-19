@@ -1,0 +1,61 @@
+uuid: 87215084-66a1-4806-9716-fca0a60f35da
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.salary
+    - field.field.contact_message.salary.field_basic
+    - field.field.contact_message.salary.field_hra
+    - field.field.contact_message.salary.field_special_allowances
+    - field.field.contact_message.salary.field_user_nam
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: contact_message.salary.default
+targetEntityType: contact_message
+bundle: salary
+mode: default
+content:
+  field_basic:
+    type: number
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_hra:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_special_allowances:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_user_nam:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  copy: true
+  mail: true
+  message: true
+  name: true
+  preview: true
+  subject: true

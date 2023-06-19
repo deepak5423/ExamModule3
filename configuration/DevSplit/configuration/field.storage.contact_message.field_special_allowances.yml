@@ -1,0 +1,20 @@
+uuid: c68af510-a5c1-4a0b-95e8-8f1ed31c36b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+id: contact_message.field_special_allowances
+field_name: field_special_allowances
+entity_type: contact_message
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

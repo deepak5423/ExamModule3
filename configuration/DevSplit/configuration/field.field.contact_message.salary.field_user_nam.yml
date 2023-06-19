@@ -1,0 +1,29 @@
+uuid: f4c54656-e564-4b9d-9668-bfc5869cb0ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.salary
+    - field.storage.contact_message.field_user_nam
+id: contact_message.salary.field_user_nam
+field_name: field_user_nam
+entity_type: contact_message
+bundle: salary
+label: 'User name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: field_name
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference

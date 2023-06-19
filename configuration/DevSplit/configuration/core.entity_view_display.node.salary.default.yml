@@ -1,0 +1,54 @@
+uuid: 322f2a1f-ae79-4e3e-9cb6-7a01b2de2751
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.salary.field_basic
+    - field.field.node.salary.field_hra
+    - field.field.node.salary.field_special_allowances
+    - field.field.node.salary.field_user_name
+    - node.type.salary
+  module:
+    - user
+id: node.salary.default
+targetEntityType: node
+bundle: salary
+mode: default
+content:
+  field_basic:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_hra:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_special_allowances:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_user_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true

@@ -1,0 +1,12 @@
+uuid: 5eb57999-b1f0-4e5a-a7ac-cc8b2eb9e377
+langcode: en
+status: true
+dependencies: {  }
+id: salary
+label: Salary
+recipients:
+  - deepak.pandey@innoraft.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

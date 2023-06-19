@@ -1,0 +1,59 @@
+uuid: abd8c073-7756-44b8-8cd9-7d8148c41a42
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.salary
+    - field.field.contact_message.salary.field_basic
+    - field.field.contact_message.salary.field_hra
+    - field.field.contact_message.salary.field_special_allowances
+    - field.field.contact_message.salary.field_user_nam
+id: contact_message.salary.default
+targetEntityType: contact_message
+bundle: salary
+mode: default
+content:
+  field_basic:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hra:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_special_allowances:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_user_nam:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  message:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

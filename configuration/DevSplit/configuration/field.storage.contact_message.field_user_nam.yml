@@ -1,0 +1,20 @@
+uuid: 92efc365-4066-4fce-a528-e25b2158149b
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - user
+id: contact_message.field_user_nam
+field_name: field_user_nam
+entity_type: contact_message
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

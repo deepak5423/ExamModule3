@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: 0xE4emSSHTVKb88WL3yN2IahuH23p8VNAXMZNux6BKs
+method: 0
+pattern: '*innoraft.com'
+message: 'You are not the employee of Innoraft if you are then please login using your official email-id'
+actions: null
+form_build_id: form-xWIOuveMqWowWO9cTrBCopH74tZ5LjuqhyLcBOFZAAQ
+form_token: AGNYjGhDUKyuv3QbBd4MnZ8tw_iNoxQzpd1FvyTztKk
+form_id: domain_registration_admin_form

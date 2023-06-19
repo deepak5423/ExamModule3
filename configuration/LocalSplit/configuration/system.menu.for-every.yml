@@ -1,0 +1,8 @@
+uuid: 5cb3d14a-1087-46f5-9dbe-3b94aa8225e3
+langcode: en
+status: true
+dependencies: {  }
+id: for-every
+label: 'for everyone'
+description: ''
+locked: false

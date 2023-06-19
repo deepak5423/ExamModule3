@@ -1,0 +1,50 @@
+uuid: c8285db0-00ab-482d-bc5c-039732ed51d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.leave_apply
+    - field.field.contact_message.leave_apply.field_from
+    - field.field.contact_message.leave_apply.field_reason_for_leave
+    - field.field.contact_message.leave_apply.field_to
+  module:
+    - datetime
+id: contact_message.leave_apply.default
+targetEntityType: contact_message
+bundle: leave_apply
+mode: default
+content:
+  field_from:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_reason_for_leave:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_to:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  message:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

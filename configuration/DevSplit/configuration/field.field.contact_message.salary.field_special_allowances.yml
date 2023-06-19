@@ -1,0 +1,23 @@
+uuid: ae92d573-8e71-4bf4-bafc-806693f9d81c
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.salary
+    - field.storage.contact_message.field_special_allowances
+id: contact_message.salary.field_special_allowances
+field_name: field_special_allowances
+entity_type: contact_message
+bundle: salary
+label: 'Special Allowances'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
